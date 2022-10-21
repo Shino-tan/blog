@@ -10,9 +10,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://43.143.119.227:3306/blog_master?serverTimezone=Asia/Shanghai&allowMultiQueries=true
-    username: root
-    password: 123456
+    url: jdbc:mysql://:3306/blog_master?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: 
+    password: 
     hikari:
       minimum-idle: 5
       # 空闲连接存活最大时间，默认600000（10分钟）
@@ -30,12 +30,12 @@ spring:
       connection-test-query: SELECT 1
   # redis配置
   redis:
-    host: 43.143.119.227
+    host: 
     port: 6379
-    password: 123456
+    password:
   # mq配置
   rabbitmq:
-    host: 43.143.119.227
+    host: 
     port: 5672
     username: guest
     password: guest
@@ -52,9 +52,9 @@ spring:
 #      uris: MYIP:9200
   # 邮箱配置
   mail:
-    host: smtp.qq.com
-    username: 2498036296@qq.com
-    password: lczldaosvjirebih
+    host: 
+    username: 
+    password: 
     default-encoding: UTF-8
     port: 587
     properties:
@@ -90,11 +90,11 @@ upload:
     # 本地文件存储路径
     path: #/usr/local/upload/
   oss:
-    url: http://tzblog2.oss-cn-hangzhou.aliyuncs.com/
-    endpoint: oss-cn-hangzhou.aliyuncs.com
-    accessKeyId: LTAI5t9ZEpj5C4YooyW4noTs
-    accessKeySecret: A2Ah6A324y4Qxca9p956wqXYX2yqze
-    bucketName: tzblog2
+    url: 
+    endpoint: 
+    accessKeyId: 
+    accessKeySecret: 
+    bucketName: 
   cos:
     url: #http://Bucket域名/
     secretId: #cos的secretId
@@ -104,7 +104,7 @@ upload:
 
 # 网站前台域名（邮件通知用）
 website:
-  url: http://43.143.119.227:8080
+  url: 
   #//你的主域名或ip
 
 #第三方配置信息
